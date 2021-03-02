@@ -1,0 +1,222 @@
+[gd_scene load_steps=50 format=2]
+
+[ext_resource path="res://assets/RocketFrames/frame_08_delay-0.01s.png" type="Texture" id=2]
+[ext_resource path="res://assets/RocketFrames/frame_15_delay-0.01s.png" type="Texture" id=3]
+[ext_resource path="res://assets/RocketFrames/frame_13_delay-0.01s.png" type="Texture" id=4]
+[ext_resource path="res://assets/RocketFrames/frame_18_delay-0.01s.png" type="Texture" id=5]
+[ext_resource path="res://BuildReactor.gd" type="Script" id=6]
+[ext_resource path="res://TextureButton.gd" type="Script" id=7]
+[ext_resource path="res://global.gd" type="Script" id=8]
+[ext_resource path="res://Energy.gd" type="Script" id=9]
+[ext_resource path="res://Reactors.gd" type="Script" id=10]
+[ext_resource path="res://assets/RocketFrames/frame_19_delay-0.01s.png" type="Texture" id=11]
+[ext_resource path="res://assets/RocketFrames/frame_11_delay-0.01s.png" type="Texture" id=12]
+[ext_resource path="res://assets/RocketFrames/frame_10_delay-0.01s.png" type="Texture" id=13]
+[ext_resource path="res://assets/RocketFrames/frame_12_delay-0.01s.png" type="Texture" id=14]
+[ext_resource path="res://assets/RocketFrames/frame_14_delay-0.01s.png" type="Texture" id=15]
+[ext_resource path="res://assets/RocketFrames/frame_16_delay-0.01s.png" type="Texture" id=16]
+[ext_resource path="res://assets/RocketFrames/frame_17_delay-0.01s.png" type="Texture" id=17]
+[ext_resource path="res://assets/RocketFrames/frame_01_delay-0.01s.png" type="Texture" id=18]
+[ext_resource path="res://assets/RocketFrames/frame_00_delay-0.01s.png" type="Texture" id=19]
+[ext_resource path="res://assets/RocketFrames/frame_02_delay-0.01s.png" type="Texture" id=20]
+[ext_resource path="res://assets/RocketFrames/frame_04_delay-0.01s.png" type="Texture" id=21]
+[ext_resource path="res://assets/RocketFrames/frame_05_delay-0.01s.png" type="Texture" id=22]
+[ext_resource path="res://assets/RocketFrames/frame_06_delay-0.01s.png" type="Texture" id=23]
+[ext_resource path="res://assets/RocketFrames/frame_07_delay-0.01s.png" type="Texture" id=24]
+[ext_resource path="res://assets/RocketFrames/frame_03_delay-0.01s.png" type="Texture" id=25]
+[ext_resource path="res://assets/RocketFrames/frame_28_delay-0.01s.png" type="Texture" id=26]
+[ext_resource path="res://assets/RocketFrames/frame_29_delay-0.01s.png" type="Texture" id=27]
+[ext_resource path="res://assets/RocketFrames/frame_26_delay-0.01s.png" type="Texture" id=28]
+[ext_resource path="res://assets/RocketFrames/frame_20_delay-0.01s.png" type="Texture" id=29]
+[ext_resource path="res://assets/RocketFrames/frame_24_delay-0.01s.png" type="Texture" id=30]
+[ext_resource path="res://assets/RocketFrames/frame_33_delay-0.01s.png" type="Texture" id=31]
+[ext_resource path="res://assets/RocketFrames/frame_23_delay-0.01s.png" type="Texture" id=32]
+[ext_resource path="res://assets/RocketFrames/frame_27_delay-0.01s.png" type="Texture" id=33]
+[ext_resource path="res://assets/RocketFrames/frame_30_delay-0.01s.png" type="Texture" id=34]
+[ext_resource path="res://assets/RocketFrames/frame_35_delay-0.01s.png" type="Texture" id=35]
+[ext_resource path="res://assets/RocketFrames/frame_21_delay-0.01s.png" type="Texture" id=36]
+[ext_resource path="res://assets/RocketFrames/frame_25_delay-0.01s.png" type="Texture" id=37]
+[ext_resource path="res://assets/RocketFrames/frame_31_delay-0.01s.png" type="Texture" id=38]
+[ext_resource path="res://assets/RocketFrames/frame_34_delay-0.01s.png" type="Texture" id=39]
+[ext_resource path="res://assets/RocketFrames/frame_22_delay-0.01s.png" type="Texture" id=40]
+[ext_resource path="res://assets/RocketFrames/frame_32_delay-0.01s.png" type="Texture" id=41]
+[ext_resource path="res://ReactorStrengthLabel.gd" type="Script" id=42]
+[ext_resource path="res://ImproveReactorsButton.gd" type="Script" id=43]
+[ext_resource path="res://TimeCounter.gd" type="Script" id=44]
+[ext_resource path="res://HighScore.gd" type="Script" id=45]
+[ext_resource path="res://BuildReactorx10Button.gd" type="Script" id=46]
+[ext_resource path="res://ImproveReactorsx10Button.gd" type="Script" id=47]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 25 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 2 ), ExtResource( 19 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 4 ), ExtResource( 15 ), ExtResource( 3 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 29 ), ExtResource( 36 ), ExtResource( 40 ), ExtResource( 32 ), ExtResource( 30 ), ExtResource( 37 ), ExtResource( 28 ), ExtResource( 33 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 34 ), ExtResource( 38 ), ExtResource( 41 ), ExtResource( 31 ), ExtResource( 39 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=3]
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("../../../Button:align")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0.1, 0.2 )
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="Game" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1066.0
+margin_bottom = 602.0
+custom_constants/margin_right = 120
+custom_constants/margin_top = 80
+custom_constants/margin_left = 120
+custom_constants/margin_bottom = 80
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MainContainer" type="VBoxContainer" parent="Game"]
+margin_left = 120.0
+margin_top = 80.0
+margin_right = 946.0
+margin_bottom = 522.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 30
+
+[node name="Title" type="Label" parent="Game/MainContainer"]
+margin_right = 826.0
+margin_bottom = 14.0
+custom_styles/normal = SubResource( 1 )
+text = "How fast can you reach a million Energy?"
+align = 1
+
+[node name="ScoresContainer" type="HBoxContainer" parent="Game/MainContainer"]
+margin_top = 44.0
+margin_right = 826.0
+margin_bottom = 58.0
+custom_constants/separation = 50
+
+[node name="TimeCounter" type="Label" parent="Game/MainContainer/ScoresContainer"]
+margin_right = 99.0
+margin_bottom = 14.0
+text = "Current Time: 0"
+script = ExtResource( 44 )
+
+[node name="HighScore" type="Label" parent="Game/MainContainer/ScoresContainer"]
+margin_left = 149.0
+margin_right = 229.0
+margin_bottom = 14.0
+text = "HighScore: 0"
+script = ExtResource( 45 )
+
+[node name="GameBoardContainer" type="HBoxContainer" parent="Game/MainContainer"]
+margin_top = 88.0
+margin_right = 826.0
+margin_bottom = 227.0
+size_flags_horizontal = 3
+custom_constants/separation = 500
+
+[node name="ButtonsContainer" type="VBoxContainer" parent="Game/MainContainer/GameBoardContainer"]
+margin_right = 326.0
+margin_bottom = 139.0
+
+[node name="EnergyGenButton" type="Button" parent="Game/MainContainer/GameBoardContainer/ButtonsContainer"]
+margin_right = 326.0
+margin_bottom = 20.0
+text = "Generate Energy"
+script = ExtResource( 7 )
+
+[node name="BuildReactorButtonsContainer" type="HBoxContainer" parent="Game/MainContainer/GameBoardContainer/ButtonsContainer"]
+margin_top = 24.0
+margin_right = 326.0
+margin_bottom = 44.0
+
+[node name="BuildReactorButton" type="Button" parent="Game/MainContainer/GameBoardContainer/ButtonsContainer/BuildReactorButtonsContainer"]
+margin_right = 161.0
+margin_bottom = 20.0
+text = "Build Reactor (Cost: 10)"
+script = ExtResource( 6 )
+
+[node name="BuildReactorx10Button" type="Button" parent="Game/MainContainer/GameBoardContainer/ButtonsContainer/BuildReactorButtonsContainer"]
+margin_left = 165.0
+margin_right = 272.0
+margin_bottom = 20.0
+text = "x10 (Cost: 100)"
+script = ExtResource( 46 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ImproveReactorsButtonsContainer" type="HBoxContainer" parent="Game/MainContainer/GameBoardContainer/ButtonsContainer"]
+margin_top = 48.0
+margin_right = 326.0
+margin_bottom = 68.0
+
+[node name="ImproveReactorsButton" type="Button" parent="Game/MainContainer/GameBoardContainer/ButtonsContainer/ImproveReactorsButtonsContainer"]
+margin_right = 161.0
+margin_bottom = 20.0
+text = "Build Reactor (Cost: 10)"
+script = ExtResource( 43 )
+
+[node name="ImproveReactorsx10Button" type="Button" parent="Game/MainContainer/GameBoardContainer/ButtonsContainer/ImproveReactorsButtonsContainer"]
+margin_left = 165.0
+margin_right = 326.0
+margin_bottom = 20.0
+text = "Build Reactor (Cost: 10)"
+script = ExtResource( 47 )
+
+[node name="EnergyLabel" type="Label" parent="Game/MainContainer/GameBoardContainer/ButtonsContainer"]
+margin_top = 72.0
+margin_right = 326.0
+margin_bottom = 86.0
+text = "Energy: 0"
+script = ExtResource( 9 )
+
+[node name="ReactorsLabel" type="Label" parent="Game/MainContainer/GameBoardContainer/ButtonsContainer"]
+margin_top = 90.0
+margin_right = 326.0
+margin_bottom = 104.0
+text = "Reactors: 0"
+script = ExtResource( 10 )
+
+[node name="ReactorStrengthLabel" type="Label" parent="Game/MainContainer/GameBoardContainer/ButtonsContainer"]
+margin_top = 108.0
+margin_right = 326.0
+margin_bottom = 139.0
+text = "Reactorstrength: 1
+"
+script = ExtResource( 42 )
+
+[node name="AnimationContainer" type="CenterContainer" parent="Game/MainContainer/GameBoardContainer"]
+margin_left = 826.0
+margin_right = 826.0
+margin_bottom = 139.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Game/MainContainer/GameBoardContainer/AnimationContainer"]
+position = Vector2( -311, -8 )
+scale = Vector2( 0.443327, 0.416055 )
+frames = SubResource( 2 )
+frame = 16
+playing = true
+centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Game/MainContainer/GameBoardContainer/AnimationContainer"]
+"anims/Neue Animation" = SubResource( 3 )
+[connection signal="pressed" from="Game/MainContainer/GameBoardContainer/ButtonsContainer/EnergyGenButton" to="Game/MainContainer/GameBoardContainer/ButtonsContainer/EnergyGenButton" method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="Game/MainContainer/GameBoardContainer/ButtonsContainer/BuildReactorButtonsContainer/BuildReactorButton" to="Game/MainContainer/GameBoardContainer/ButtonsContainer/BuildReactorButtonsContainer/BuildReactorButton" method="_on_BuildReactor_pressed"]
+[connection signal="pressed" from="Game/MainContainer/GameBoardContainer/ButtonsContainer/BuildReactorButtonsContainer/BuildReactorx10Button" to="Game/MainContainer/GameBoardContainer/ButtonsContainer/BuildReactorButtonsContainer/BuildReactorx10Button" method="_on_BuildReactor_pressed"]
+[connection signal="pressed" from="Game/MainContainer/GameBoardContainer/ButtonsContainer/ImproveReactorsButtonsContainer/ImproveReactorsButton" to="Game/MainContainer/GameBoardContainer/ButtonsContainer/ImproveReactorsButtonsContainer/ImproveReactorsButton" method="_on_ImproveReactorsButton_pressed"]
+[connection signal="pressed" from="Game/MainContainer/GameBoardContainer/ButtonsContainer/ImproveReactorsButtonsContainer/ImproveReactorsx10Button" to="Game/MainContainer/GameBoardContainer/ButtonsContainer/ImproveReactorsButtonsContainer/ImproveReactorsx10Button" method="_on_ImproveReactorsButton_pressed"]
