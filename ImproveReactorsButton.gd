@@ -9,6 +9,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	improveReactorCost = Global.getImproveReactorCost()
 	self.text = "Improve Reactors (Cost: " + str(improveReactorCost) +  " )"
 	if(improveReactorCost > Global.energy):
 		self.disabled = true
@@ -21,4 +22,4 @@ func _on_ImproveReactorsButton_pressed():
 	if(Global.energy >= improveReactorCost):
 		Global.energy -= improveReactorCost
 		Global.reactorstrength += 1;
-	improveReactorCost = Global.getImproveReactorCost()
+
